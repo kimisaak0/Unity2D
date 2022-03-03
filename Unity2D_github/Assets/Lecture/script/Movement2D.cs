@@ -7,9 +7,7 @@ public class Movement2D : MonoBehaviour
 
     private void Awake()
     {
-        if(GetComponent<Rigidbody2D>() != null) {
-            rigid2D = GetComponent<Rigidbody2D>();
-        }
+        rigid2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
