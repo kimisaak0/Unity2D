@@ -28,7 +28,7 @@ public class ObjectSpawner : MonoBehaviour
             Vector3     position    = spawnPointArray[spawnIndex].position;
             GameObject  clone       = Instantiate(prefabArray[prefabIndex], position, Quaternion.identity);
 
-            clone.GetComponent<Rigidbody2D>().velocity = Vector3.up * moveSpeed;
+            clone.GetComponent<Movement2D>().SetUp(Vector3.up, moveSpeed);
 
             currentObjectSpawn++;
             ObjectSpawnTime = 0.0f;
